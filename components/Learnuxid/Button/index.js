@@ -1,9 +1,11 @@
 import React from 'react';
+import styles from './button.module.css';
 
 
-const Button = ({children,...props}) => {
+const Button = ({primary=true,size,label,children,...props}) => {
+    const mode = primary ? 'button--primary' : 'button--secondary';
     return (
-        <button>
+        <button type='button' className={[styles.button,mode]} {...props}>
             {children}
         </button>
     )

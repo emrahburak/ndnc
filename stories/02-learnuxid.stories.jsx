@@ -1,14 +1,19 @@
-import React from 'react';
-import Button from '../components/Learnuxid/Button';
+import React from "react";
+import Button from "../components/Learnuxid/Button";
 
 export default {
-    title:"LearnUxID/Button"
-}
+  title: "Youtube/LearnUxID/Button",
+  argTypes: {
+    backgroundColor: { control: "color" },
+  },
+};
 
+const Template = (args) => <Button {...args}>{args.children}</Button>;
 
+export const Primary = Template.bind({});
 
-export const StyleItem = () => (<Button>LearnUxId</Button>)
-StyleItem.storyName = "Button";
-
-
-
+Primary.args = {
+  primary: true,
+  label: "Button",
+  children: "LearnUxId",
+};

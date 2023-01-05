@@ -1,0 +1,17 @@
+.button {
+    width: 308px;
+    height: 141px;
+
+    &--primary{
+        background-color: #257283;
+    }
+   
+    &--secondary{
+        background-color: #99A3A5;
+    }
+
+     &:hover {
+        background-color: #439228;
+    }
+
+}

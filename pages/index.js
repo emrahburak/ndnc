@@ -1,5 +1,11 @@
+import React from 'react';
+import Button from '../components/Learnuxid/Button';
+
+
 function HomePage(){
-    return <div>Portfolio</div>
+    return (<>
+        Wellcome to my  digital garden 
+    </>)
 }
 
 
